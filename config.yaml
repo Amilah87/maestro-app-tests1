@@ -1,0 +1,3 @@
+# Run everything in flows/. Helpers are reusable sub-flows and are not run on their own.
+flows:
+  - flows/*

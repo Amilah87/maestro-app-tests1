@@ -1,0 +1,7 @@
+appId: com.wdiodemoapp
+---
+- launchApp:
+    clearState: true
+- tapOn: "Login"
+- tapOn: "button-sign-up-container"
+- assertVisible: "button-SIGN UP"

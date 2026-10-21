@@ -1,0 +1,13 @@
+appId: com.wdiodemoapp
+name: Login - valid credentials show the success dialog
+---
+- runFlow: ../helpers/open_login.yaml
+- tapOn: "input-email"
+- inputText: "udamila87@gmail.com"
+- tapOn: "input-password"
+- inputText: "Test12345"
+- hideKeyboard
+- tapOn: "button-LOGIN"
+- assertVisible: "Success"
+- assertVisible: "You are logged in!"
+- tapOn: "OK"

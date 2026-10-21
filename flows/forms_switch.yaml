@@ -1,0 +1,10 @@
+appId: com.wdiodemoapp
+name: Forms - switch toggles and its label updates
+tags: [forms]
+---
+- runFlow: ../helpers/open_forms.yaml
+- assertVisible: "Click to turn the switch ON"
+- tapOn: "switch"
+- assertVisible: "Click to turn the switch OFF"
+- tapOn: "switch"
+- assertVisible: "Click to turn the switch ON"

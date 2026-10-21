@@ -1,0 +1,12 @@
+appId: com.wdiodemoapp
+name: Login - invalid email is rejected
+tags: [login, negative]
+---
+- runFlow: ../helpers/open_login.yaml
+- tapOn: "input-email"
+- inputText: "udamila87@gmail.c"
+- tapOn: "input-password"
+- inputText: "Test12345"
+- hideKeyboard
+- tapOn: "button-LOGIN"
+- assertVisible: "Please enter a valid email address"

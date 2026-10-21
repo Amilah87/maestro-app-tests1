@@ -1,0 +1,13 @@
+appId: com.wdiodemoapp
+name: Forms - typed text is echoed back
+tags: [forms]
+---
+- runFlow: ../helpers/open_forms.yaml
+- tapOn: "text-input"
+- inputText: "Hello Maestro"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "You have typed:"
+- assertVisible:
+    text: "Hello Maestro"
+    index: 1

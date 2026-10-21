@@ -1,0 +1,12 @@
+appId: com.wdiodemoapp
+name: Forms - Active button opens a native alert
+tags: [forms]
+---
+- runFlow: ../helpers/open_forms.yaml
+- scrollUntilVisible:
+    element: "button-Active"
+- tapOn: "button-Active"
+- assertVisible: "This button is active"
+- tapOn: "OK"
+
+
